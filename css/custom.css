@@ -1,0 +1,404 @@
+body {
+    background-color: #434c52;
+    margin-top: 100px;
+}
+
+.footer {
+    position: fixed;
+    background-color: #383b3e;
+    border-top: 3px solid #34373a;
+    color: #FFF;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.navbar {
+    z-index: 1;
+    padding-right: 250px;
+    transition: all 0.5s ease;
+}
+
+.navbar-inverse {
+    background-color: #383b3e;
+    border-bottom: 3px solid #34373a;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFF;
+}
+
+.panel {
+    background-color: transparent;
+    border: none;
+}
+
+.panel-default>.panel-heading {
+    color: #FFF;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.panel-body {
+    background-color: #3f464b;
+    border-left: 3px solid #92c900;
+}
+
+.red {
+    background-color: #3f464b;
+    border-left: 3px solid #C90000;
+}
+
+
+.alert {
+    color: #FFF;
+    background-color: #3d4348;
+}
+
+.footer-container {
+    padding-top: 12px;
+}
+
+.footer-container>p {
+    padding-right: 250px;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled .footer-container>p {
+    padding-right: 0px;
+    transition: all 0.5s ease;
+}
+
+.forced {
+    width: 25%;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled .forced {
+    width: 33.33333333%;
+    transition: all 0.5s ease;
+}
+
+/* Radial Progress */
+
+.radial-progress {
+  margin: 50px;
+  width: 300px;
+  height: 300px;
+  background-color: #3F464B;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.radial-progress .inset {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 25px;
+  background-color: #434C52;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+@media only screen and (min-width: 1100px) {
+.radial-progress {
+  margin: 50px;
+  width: 300px;
+  height: 300px;
+  background-color: #3F464B;
+  border-radius: 50%;
+}
+
+.radial-progress .inset {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 25px;
+  background-color: #434C52;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+}
+
+.percentage {
+    text-align: center;
+    color: #92C900;
+    font-size: 100;
+}
+
+.money {
+    text-align: center;
+    color: #92C900;
+    font-size: 50;
+}
+
+.radial-progress .circle .mask {
+  clip: rect(0px, 550px, 550px, 275px);
+}
+
+.radial-progress .circle .mask .fill {
+  background-color: #92C900;
+}
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+#wrapper {
+    padding-right: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-right: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    margin-right: -250px;
+	overflow-y: auto;
+    background: #161F29;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 330px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 330px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+	color: #bbb;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #bbb;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-right: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-right: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 300px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    
+    #wrapper.toggled .navbar {
+        padding-right: 0;
+        transition: all 0.5s ease;
+    }
+}
+
+/* Chat Toggle */
+
+#menu-toggle {
+	background: #92C900;
+	border-radius: 30px;
+	padding: 10px 10px;
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+	position: fixed;
+	top: 50%;
+	opacity: 1;
+	z-index: 9000;
+	right: 233px;
+	transition: right 0.5s;
+	-moz-transition: right 0.5s;
+	-webkit-transition: right 0.5s;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+#menu-toggle .closed {
+	opacity: 0;
+	position: absolute;
+	top: 9px;
+	right: 10px;
+}
+
+#wrapper.toggled #menu-toggle {
+	right: 0;
+}
+
+#wrapper.toggled #menu-toggle .opened {
+	opacity: 0;
+}
+
+#wrapper.toggled #menu-toggle .closed {
+	opacity: 1;
+}
+
+@media(max-width:768px) {
+	#menu-toggle {
+		right: 0;
+	}
+	
+	#wrapper.toggled #menu-toggle {
+		right: 233px;
+	}
+	
+	#menu-toggle span {
+		opacity: 0;
+	}
+	
+	#menu-toggle .closed {
+		opacity: 1;
+	}
+	
+	#wrapper.toggled #menu-toggle .opened {
+		opacity: 1;
+	}
+
+	#wrapper.toggled #menu-toggle .closed {
+		opacity: 0;
+	}	
+}
+
+@media (min-width: 768px) {
+#sidebar-wrapper {
+    width: 330px;
+}
+#wrapper {
+    padding-right: 330px;
+}
+#menu-toggle {
+ right: 313px;
+}
+.navbar {
+ padding-right: 330px;
+}
+ul#chat>li:nth-child(odd) {
+    background-color: #14191F;
+}
+
+ul#chat>li {
+    padding: 10px 0 10px;
+}
+.navbar {
+    z-index: 2;
+}
+}
+
+@media (min-height: 768px) {
+    .chat {
+      height: 85%;
+    }
+}
+
+@media (max-height: 768px) {
+    .chat {
+      height: 65%;
+    }
+}
+
+.chat {
+  color: white;
+  overflow-y:scroll;
+}
+
+.streamer {
+  color: #9218F5;
+}
+
+.admin {
+  color: #FF0000;
+}
+
+.support {
+  color: #228717;
+}
+
+.moderator {
+  color: #1900FF;
+}
